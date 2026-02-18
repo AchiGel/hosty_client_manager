@@ -1,0 +1,38 @@
+export const DASHBOARD_TOP_PERFORMERS = [
+  {
+    id: 1,
+    staffInitials: "MS",
+    staffName: "Maria",
+    staffLastname: "Santos",
+    department: "Housekeeping",
+    avTime: "12m",
+    ranking: "4,9",
+  },
+  {
+    id: 2,
+    staffInitials: "DC",
+    staffName: "David",
+    staffLastname: "Chen",
+    department: "Housekeeping",
+    avTime: "14m",
+    ranking: "4,8",
+  },
+  {
+    id: 3,
+    staffInitials: "EP",
+    staffName: "Elena",
+    staffLastname: "Popov",
+    department: "Room service",
+    avTime: "8m",
+    ranking: "4,9",
+  },
+  {
+    id: 4,
+    staffInitials: "JW",
+    staffName: "James",
+    staffLastname: "Wilson",
+    department: "Maintenance",
+    avTime: "18m",
+    ranking: "4,7",
+  },
+];
