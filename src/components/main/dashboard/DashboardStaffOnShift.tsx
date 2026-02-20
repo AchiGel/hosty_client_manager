@@ -1,29 +1,7 @@
 import { Link } from "react-router-dom";
+import { STAFF_ON_SHIFT } from "../../../constants/staffOnShift";
 
 const DashboardStaffOnShift = () => {
-  const STAFF_ON_SHIFT = [
-    {
-      id: 1,
-      staffInitials: "GW",
-      staffName: "George",
-      staffLastName: "Williams",
-      position: "Concierge",
-    },
-    {
-      id: 2,
-      staffInitials: "MJ",
-      staffName: "Mary",
-      staffLastName: "Johnson",
-      position: "Housekeeping Lead",
-    },
-    {
-      id: 3,
-      staffInitials: "AT",
-      staffName: "Alex",
-      staffLastName: "Thompson",
-      position: "Front Desk",
-    },
-  ];
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] p-6">
       <div className="flex justify-between items-center mb-4">

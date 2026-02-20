@@ -1,4 +1,3 @@
-import DashboardQuickActions from "./DashboardQuickActions";
 import DashboardRecentRequest from "./DashboardRecentRequest";
 import DashboardStaffOnShift from "./DashboardStaffOnShift";
 import DashboardTopPerformers from "./DashboardTopPerformers";
@@ -11,7 +10,6 @@ const DashboardMain = () => {
         <DashboardTopPerformers />
       </div>
       <div className="flex flex-col gap-6">
-        <DashboardQuickActions />
         <DashboardStaffOnShift />
       </div>
     </div>
