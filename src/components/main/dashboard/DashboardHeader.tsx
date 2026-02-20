@@ -1,13 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 const DashboardHeader = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-wrap justify-between items-end gap-4">
       <div>
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 font-display">
-          Hello, Sarah
+          {t("dashboard.welcome")}, Sarah
         </h2>
-        <p className="text-gray-500 mt-1">
-          Here's what's happening at Episode Hotel today.
-        </p>
+        <p className="text-gray-500 mt-1">{t("dashboard.subTitle")}</p>
       </div>
       <div className="text-right hidden sm:block">
         <p className="text-lg font-medium text-gray-900">February 18, 2026</p>
@@ -27,7 +28,7 @@ const DashboardHeader = () => {
             <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
             <polyline points="16 7 22 7 22 13"></polyline>
           </svg>
-          <span>High occupancy</span>
+          <span>{t("dashboard.highOccupancy")}</span>
         </div>
       </div>
     </div>

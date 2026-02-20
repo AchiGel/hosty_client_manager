@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { DASHBOARD_TOP_PERFORMERS } from "../../../constants/topPerformers";
 import TopPerformersRow from "./TopPerformersRow";
+import { useTranslation } from "react-i18next";
 
 const DashboardTopPerformers = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] overflow-hidden">
       <div className="p-6 border-b border-gray-200 flex justify-between items-center">
@@ -22,13 +24,15 @@ const DashboardTopPerformers = () => {
             <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
             <circle cx="12" cy="8" r="6"></circle>
           </svg>
-          <h3 className="text-lg font-bold text-gray-900">Top Performers</h3>
+          <h3 className="text-lg font-bold text-gray-900">
+            {t("dashboard.topPerformers")}
+          </h3>
         </div>
         <Link
           className="text-sm font-medium text-[#c5a667] hover:text-[#b09358]"
           to={"/team"}
         >
-          Full List
+          {t("common.fullList")}
         </Link>
       </div>
       <div className="divide-y divide-gray-100">

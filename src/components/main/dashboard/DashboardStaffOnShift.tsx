@@ -1,16 +1,20 @@
 import { Link } from "react-router-dom";
 import { STAFF_ON_SHIFT } from "../../../constants/staffOnShift";
+import { useTranslation } from "react-i18next";
 
 const DashboardStaffOnShift = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] p-6">
       <div className="flex justify-between items-center mb-4">
-        <h3 className="text-lg font-bold text-gray-900">Staff On Shift</h3>
+        <h3 className="text-lg font-bold text-gray-900">
+          {t("dashboard.staffOnShift")}
+        </h3>
         <Link
           to={"/team"}
           className="text-sm font-medium text-[#c5a667] hover:text-[#b09358] flex items-center gap-1"
         >
-          All{" "}
+          {t("common.all")}{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

@@ -12,12 +12,14 @@
     "signOut": "გასვლა"
   },
   "dashboard": {
-    "title": "ინფოპანელი",
-    "welcome": "კეთილი იყო დაბრუნება",
-    "quickActions": "სწრაფი ქმედებები",
-    "recentRequests": "ბოლოდ გაკეთებული მოთხოვნები",
-    "staffOnShift": "დღეშობელი პერსონალი",
-    "topPerformers": "საუკეთესო შესრულება"
+    "welcome": "გამარჯობა",
+    "subTitle": "აი რა ხდება Episode Hotel-ში დღეს.",
+    "highOccupancy": "მაღალი დატვირთვა",
+    "mediumOccupancy": "საშუალო დატვირთვა",
+    "lowOccupancy": "დაბალი დატვირთვა",
+    "recentRequests": "ბოლო მოთხოვნები",
+    "staffOnShift": "ცვლაზე მყოფი პერსონალი",
+    "topPerformers": "საუკეთესო თანამშრომლები"
   },
   "common": {
     "loading": "იტვირთება...",
@@ -28,7 +30,10 @@
     "delete": "წაშლა",
     "edit": "რედაქტირება",
     "search": "ძებნა",
-    "noResults": "ფলებები ვერ მოიძებნა"
+    "noResults": "ფলებები ვერ მოიძებნა",
+    "viewAll": "ყველას ნახვა",
+    "all": "ყველა",
+    "fullList": "სრული სია"
   },
   "auth": {
     "login": "ავტორიზაცია",

@@ -12,9 +12,11 @@
     "signOut": "Sign Out"
   },
   "dashboard": {
-    "title": "Dashboard",
-    "welcome": "Welcome back",
-    "quickActions": "Quick Actions",
+    "welcome": "Hello",
+    "subTitle": "Here's what's happening at Episode Hotel today.",
+    "highOccupancy": "High occupancy",
+    "mediumOccupancy": "Medium occupancy",
+    "lowOccupancy": "Low occupancy",
     "recentRequests": "Recent Requests",
     "staffOnShift": "Staff On Shift",
     "topPerformers": "Top Performers"
@@ -28,7 +30,10 @@
     "delete": "Delete",
     "edit": "Edit",
     "search": "Search",
-    "noResults": "No results found"
+    "noResults": "No results found",
+    "viewAll": "View All",
+    "all": "All",
+    "fullList": "Full List"
   },
   "auth": {
     "login": "Login",
