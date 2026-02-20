@@ -1,6 +1,6 @@
 export const NAVIGATION_LINKS = [
   {
-    id: 1,
+    id: 111,
     path: "/",
     icon: (
       <svg
@@ -24,7 +24,7 @@ export const NAVIGATION_LINKS = [
     label: "Dashboard",
   },
   {
-    id: 2,
+    id: 222,
     path: "/staff",
     icon: (
       <svg
@@ -48,7 +48,7 @@ export const NAVIGATION_LINKS = [
     label: "Staff",
   },
   {
-    id: 3,
+    id: 333,
     path: "/departments",
     icon: (
       <svg
@@ -75,7 +75,7 @@ export const NAVIGATION_LINKS = [
     label: "Departments",
   },
   {
-    id: 4,
+    id: 4444,
     path: "/shifts",
     icon: (
       <svg
@@ -97,7 +97,7 @@ export const NAVIGATION_LINKS = [
     label: "Shifts",
   },
   {
-    id: 5,
+    id: 5555,
     path: "/requests",
     icon: (
       <svg
@@ -124,7 +124,7 @@ export const NAVIGATION_LINKS = [
   },
 
   {
-    id: 5,
+    id: 6666,
     path: "/analytics",
     icon: (
       <svg
@@ -148,7 +148,7 @@ export const NAVIGATION_LINKS = [
     label: "Analytics",
   },
   {
-    id: 6,
+    id: 7777,
     path: "/integration",
     icon: (
       <svg

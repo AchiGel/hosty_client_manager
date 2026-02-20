@@ -21,6 +21,15 @@
     "staffOnShift": "Staff On Shift",
     "topPerformers": "Top Performers"
   },
+  "staff": {
+    "title": "Staff Management",
+    "subTitle": "Manage staff, invite new members, assign shifts",
+    "invitation": "Invite Staff",
+    "activeStaff": "Active Staff",
+    "onShift": "On Shift",
+    "pending": "Pending Invites",
+    "search": "Search by name, email, or department..."
+  },
   "common": {
     "loading": "Loading...",
     "error": "Error",
