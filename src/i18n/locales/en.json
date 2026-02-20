@@ -1,0 +1,43 @@
+{
+  "title": { "managerPanel": "Manager panel" },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "staff": "Staff",
+    "departments": "Departments",
+    "shifts": "Shifts",
+    "requests": "Requests",
+    "analytics": "Analytics",
+    "integration": "Integration",
+    "settings": "Settings",
+    "signOut": "Sign Out"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back",
+    "quickActions": "Quick Actions",
+    "recentRequests": "Recent Requests",
+    "staffOnShift": "Staff On Shift",
+    "topPerformers": "Top Performers"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "noResults": "No results found"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "signUp": "Sign up",
+    "signIn": "Sign in"
+  }
+}

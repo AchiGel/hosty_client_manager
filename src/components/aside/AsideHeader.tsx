@@ -1,4 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 const AsideHeader = () => {
+  const { t } = useTranslation();
+  const translationKeys = {
+    title: "title.managerPanel",
+  };
   return (
     <div className="p-6 flex items-center gap-3 mb-2">
       <div className="bg-[#c5a667]/20 flex items-center justify-center rounded-lg size-10 text-[#c5a667]">
@@ -22,7 +28,7 @@ const AsideHeader = () => {
           Hosty
         </h1>
         <p className="text-[#c5a667] text-xs font-medium tracking-wide uppercase">
-          ADMIN PANEL
+          {t(translationKeys.title)}
         </p>
       </div>
     </div>

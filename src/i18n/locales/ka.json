@@ -1,0 +1,43 @@
+{
+  "title": { "managerPanel": "მენეჯერის პანელი" },
+  "navigation": {
+    "dashboard": "მთავარი",
+    "staff": "პერსონალი",
+    "departments": "დეპარტამენტები",
+    "shifts": "ცვლები",
+    "requests": "მოთხოვნები",
+    "analytics": "ანალიტიკა",
+    "integration": "ინტეგრაცია",
+    "settings": "პარამეტრები",
+    "signOut": "გასვლა"
+  },
+  "dashboard": {
+    "title": "ინფოპანელი",
+    "welcome": "კეთილი იყო დაბრუნება",
+    "quickActions": "სწრაფი ქმედებები",
+    "recentRequests": "ბოლოდ გაკეთებული მოთხოვნები",
+    "staffOnShift": "დღეშობელი პერსონალი",
+    "topPerformers": "საუკეთესო შესრულება"
+  },
+  "common": {
+    "loading": "იტვირთება...",
+    "error": "შეცდომა",
+    "success": "წარმატება",
+    "cancel": "გაუქმება",
+    "save": "შენახვა",
+    "delete": "წაშლა",
+    "edit": "რედაქტირება",
+    "search": "ძებნა",
+    "noResults": "ფলებები ვერ მოიძებნა"
+  },
+  "auth": {
+    "login": "ავტორიზაცია",
+    "register": "რეგისტრაცია",
+    "email": "ელ-ფოსტა",
+    "password": "პაროლი",
+    "rememberMe": "დამიმახსოვრე",
+    "forgotPassword": "პაროლი დაგავიწყდა?",
+    "signUp": "რეგისტრაცია",
+    "signIn": "ავტორიზაცია"
+  }
+}
