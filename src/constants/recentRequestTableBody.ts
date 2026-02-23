@@ -27,7 +27,7 @@ export const RECENT_REQUEST_TABLE_BODY = [
     roomNumber: "104",
     request: "Room service - Lunch",
     time: "1h",
-    status: "In Progress",
+    status: "InProgress",
   },
   {
     id: 4,

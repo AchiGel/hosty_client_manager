@@ -19,7 +19,21 @@
     "lowOccupancy": "დაბალი დატვირთვა",
     "recentRequests": "ბოლო მოთხოვნები",
     "staffOnShift": "ცვლაზე მყოფი პერსონალი",
-    "topPerformers": "საუკეთესო თანამშრომლები"
+    "topPerformers": "საუკეთესო თანამშრომლები",
+    "totalRequests": "სულ მოთხოვნები",
+    "openRequests": "ღია მოთხოვნები",
+    "inProgress": "მიმდინარე",
+    "satisfaction": "კმაყოფილება",
+    "actionNeeded": "მოითხოვს ყურადღებას",
+    "stable": "სტაბილური",
+    "guestRoom": "სტუმარი / ოთახი",
+    "request": "მოთხოვნა",
+    "time": "დრო",
+    "status": "სტატუსი",
+    "action": "მოქმედება",
+    "new": "ახალი",
+    "review": "განხილვა",
+    "completed": "დასრულებული"
   },
   "staff": {
     "title": "პერსონალის მართვა",
@@ -42,7 +56,9 @@
     "noResults": "ფলებები ვერ მოიძებნა",
     "viewAll": "ყველას ნახვა",
     "all": "ყველა",
-    "fullList": "სრული სია"
+    "fullList": "სრული სია",
+    "room": "ოთახი",
+    "ago": "წინ"
   },
   "auth": {
     "login": "ავტორიზაცია",

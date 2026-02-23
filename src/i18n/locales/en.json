@@ -19,7 +19,21 @@
     "lowOccupancy": "Low occupancy",
     "recentRequests": "Recent Requests",
     "staffOnShift": "Staff On Shift",
-    "topPerformers": "Top Performers"
+    "topPerformers": "Top Performers",
+    "totalRequests": "Total Requests",
+    "openRequests": "Open Requests",
+    "inProgress": "In Progress",
+    "satisfaction": "Satisfaction",
+    "actionNeeded": "Action needed",
+    "stable": "Stable",
+    "guestRoom": "Guest / Room",
+    "request": "Request",
+    "time": "time",
+    "status": "Status",
+    "action": "Action",
+    "new": "New",
+    "review": "Review",
+    "completed": "Completed"
   },
   "staff": {
     "title": "Staff Management",
@@ -42,7 +56,9 @@
     "noResults": "No results found",
     "viewAll": "View All",
     "all": "All",
-    "fullList": "Full List"
+    "fullList": "Full List",
+    "room": "Room",
+    "ago": "Ago"
   },
   "auth": {
     "login": "Login",

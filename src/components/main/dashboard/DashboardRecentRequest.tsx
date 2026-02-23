@@ -5,6 +5,20 @@ import { useTranslation } from "react-i18next";
 
 const DashboardRecentRequest = () => {
   const { t } = useTranslation();
+  const labelTranslationKeys: Record<string, string> = {
+    GuestRoom: "dashboard.guestRoom",
+    Request: "dashboard.request",
+    Time: "dashboard.time",
+    Status: "dashboard.status",
+    Action: "dashboard.action",
+  };
+
+  const statusTranslationKeys: Record<string, string> = {
+    New: "dashboard.new",
+    Review: "dashboard.review",
+    InProgress: "dashboard.inProgress",
+    Completed: "dashboard.completed",
+  };
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] overflow-hidden flex flex-col">
       <div className="p-6 border-b border-gray-200 flex justify-between items-center">
@@ -27,7 +41,7 @@ const DashboardRecentRequest = () => {
                   key={rrth.id}
                   className={`px-6 py-4 font-medium ${rrth.id === 5 ? "text-right" : ""}`}
                 >
-                  {rrth.label}
+                  {t(labelTranslationKeys[rrth.label || rrth.label])}
                 </th>
               ))}
             </tr>
@@ -48,23 +62,23 @@ const DashboardRecentRequest = () => {
                         {rrtb.staffName + " " + rrtb.staffLastname}
                       </p>
                       <p className="text-xs text-gray-500">
-                        {"Room " + rrtb.roomNumber}
+                        {t("common.room") + " " + rrtb.roomNumber}
                       </p>
                     </div>
                   </div>
                 </td>
                 <td className="px-6 py-4 text-gray-900">{rrtb.request}</td>
                 <td className="px-6 py-4 text-gray-500">
-                  {rrtb.time + " ago"}
+                  {rrtb.time + " " + t("common.ago")}
                 </td>
                 <td className="px-6 py-4">
                   <span
-                    className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium ${rrtb.status === "New" ? "bg-red-50 text-red-600" : rrtb.status === "Review" ? "bg-orange-50 text-orange-600" : rrtb.status === "In Progress" ? "bg-blue-50 text-blue-600" : "bg-green-50 text-green-600"} `}
+                    className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium ${rrtb.status === "New" ? "bg-red-50 text-red-600" : rrtb.status === "Review" ? "bg-orange-50 text-orange-600" : rrtb.status === "InProgress" ? "bg-blue-50 text-blue-600" : "bg-green-50 text-green-600"} `}
                   >
                     <span
-                      className={`w-1.5 h-1.5 rounded-full ${rrtb.status === "New" ? "bg-red-600" : rrtb.status === "Review" ? "bg-orange-600" : rrtb.status === "In Progress" ? "bg-blue-600" : "bg-green-600"}`}
+                      className={`w-1.5 h-1.5 rounded-full ${rrtb.status === "New" ? "bg-red-600" : rrtb.status === "Review" ? "bg-orange-600" : rrtb.status === "InProgress" ? "bg-blue-600" : "bg-green-600"}`}
                     ></span>
-                    {rrtb.status}
+                    {t(statusTranslationKeys[rrtb.status] || rrtb.status)}
                   </span>
                 </td>
                 <td className="px-6 py-4 text-right">
