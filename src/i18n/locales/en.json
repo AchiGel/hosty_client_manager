@@ -56,6 +56,14 @@
     "disabled": "Disabled",
     "invited": "Invited"
   },
+  "departments": {
+    "title": "Departments",
+    "subTitle": "Create, edit, and manage hotel departments",
+    "newDepartment": "New Department",
+    "staff": "Staff",
+    "active": "Active",
+    "archived": "Archived"
+  },
   "common": {
     "loading": "Loading...",
     "error": "Error",
