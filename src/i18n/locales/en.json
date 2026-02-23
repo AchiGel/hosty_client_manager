@@ -41,8 +41,20 @@
     "invitation": "Invite Staff",
     "activeStaff": "Active Staff",
     "onShift": "On Shift",
+    "offShift": "Off shift",
     "pending": "Pending Invites",
-    "search": "Search by name, email, or department..."
+    "search": "Search by name, email, or department...",
+    "fullName": "Full Name",
+    "department": "department",
+    "shift": "shift",
+    "shiftStatus": "shift Status",
+    "accountStatus": "account Status",
+    "morning": "Morning",
+    "night": "Night",
+    "notAssigned": "Not Assigned",
+    "active": "Active",
+    "disabled": "Disabled",
+    "invited": "Invited"
   },
   "common": {
     "loading": "Loading...",
@@ -58,7 +70,9 @@
     "all": "All",
     "fullList": "Full List",
     "room": "Room",
-    "ago": "Ago"
+    "ago": "Ago",
+    "showing": "Showing",
+    "of": "of"
   },
   "auth": {
     "login": "Login",

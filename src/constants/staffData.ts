@@ -1,9 +1,9 @@
 export const STAFF_TABLE_HEADER = [
-  { id: 1, label: "Full Name" },
+  { id: 1, label: "FullName" },
   { id: 2, label: "Department" },
   { id: 3, label: "Shift" },
-  { id: 4, label: "Shift Status" },
-  { id: 5, label: "Account Status" },
+  { id: 4, label: "ShiftStatus" },
+  { id: 5, label: "AccountStatus" },
   { id: 6, label: "" },
 ];
 
@@ -58,7 +58,7 @@ export const STAFF_DATA = [
     fullName: "Sophia Martinez",
     email: "sophia.m@episode.com",
     department: "Housekeeping",
-    shift: "not assigned",
+    shift: "notAssigned",
     isOnShift: false,
     accountStatus: "invited",
   },
@@ -67,7 +67,7 @@ export const STAFF_DATA = [
     fullName: "Daniel Anderson",
     email: "daniel.a@episode.com",
     department: "Maintenance",
-    shift: "not assigned",
+    shift: "notAssigned",
     isOnShift: false,
     accountStatus: "disabled",
   },

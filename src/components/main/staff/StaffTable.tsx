@@ -1,6 +1,29 @@
+import { useTranslation } from "react-i18next";
 import { STAFF_DATA, STAFF_TABLE_HEADER } from "../../../constants/staffData";
 
 const StaffTable = () => {
+  const { t } = useTranslation();
+
+  const labelTranslationKeys: Record<string, string> = {
+    FullName: "staff.fullName",
+    Department: "staff.department",
+    Shift: "staff.shift",
+    ShiftStatus: "staff.shiftStatus",
+    AccountStatus: "staff.accountStatus",
+  };
+
+  const shiftTranslationKeys: Record<string, string> = {
+    morning: "staff.morning",
+    night: "staff.night",
+    notAssigned: "staff.notAssigned",
+  };
+
+  const accountStatusTranslationKeys: Record<string, string> = {
+    active: "staff.active",
+    disabled: "staff.disabled",
+    invited: "staff.invited",
+  };
+
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
       <div className="overflow-x-auto">
@@ -12,7 +35,7 @@ const StaffTable = () => {
                   className="px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider"
                   key={sth.id}
                 >
-                  {sth.label}
+                  {t(labelTranslationKeys[sth.label] || sth.label)}
                 </th>
               ))}
             </tr>
@@ -32,8 +55,10 @@ const StaffTable = () => {
                   </span>
                 </td>
                 <td className="px-6 py-4">
-                  <span className="inline-flex items-center gap-1.5 text-sm text-gray-700">
-                    {sd.shift == "not assigned" ? null : (
+                  <span
+                    className={`inline-flex items-center gap-1.5 text-sm  ${sd.shift == "notAssigned" ? "text-gray-400 italic" : "text-gray-700"}`}
+                  >
+                    {sd.shift == "notAssigned" ? null : (
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -51,7 +76,7 @@ const StaffTable = () => {
                       </svg>
                     )}
 
-                    {sd.shift}
+                    {t(shiftTranslationKeys[sd.shift] || sd.shift)}
                   </span>
                 </td>
                 <td className="px-6 py-4">
@@ -60,7 +85,7 @@ const StaffTable = () => {
                       className={`size-2 rounded-full ${sd.isOnShift ? "bg-emerald-500" : "bg-gray-300"}`}
                     ></div>
                     <span className="text-sm text-gray-700">
-                      {sd.isOnShift ? "On Shift" : "Off Shift"}
+                      {sd.isOnShift ? t("staff.onShift") : t("staff.offShift")}
                     </span>
                   </div>
                 </td>
@@ -68,7 +93,10 @@ const StaffTable = () => {
                   <span
                     className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ${sd.accountStatus === "active" ? "bg-green-50 text-green-700 border border-green-100" : sd.accountStatus === "disabled" ? "bg-red-50 text-red-600 border border-red-100" : "bg-yellow-50 text-yellow-700 border border-yellow-100"}`}
                   >
-                    {sd.accountStatus}
+                    {t(
+                      accountStatusTranslationKeys[sd.accountStatus] ||
+                        sd.accountStatus,
+                    )}
                   </span>
                 </td>
                 <td className="px-6 py-4 text-right">
@@ -97,7 +125,9 @@ const StaffTable = () => {
         </table>
       </div>
       <div className="border-t border-gray-200 px-6 py-4 flex items-center justify-between">
-        <span className="text-xs text-gray-500">Showing 7 of 7</span>
+        <span className="text-xs text-gray-500">
+          {t("common.showing") + " 7 " + t("common.of") + " 7"}
+        </span>
         <div className="flex gap-2">
           <button className="size-8 rounded flex items-center justify-center border border-gray-200 text-gray-400 disabled:opacity-50">
             <svg
