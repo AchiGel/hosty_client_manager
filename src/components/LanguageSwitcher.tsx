@@ -12,7 +12,7 @@ const LanguageSwitcher = () => {
     <div className="flex items-center bg-gray-100 rounded-full p-0.5">
       <button
         onClick={() => changeLanguage("en")}
-        className={`px-2.5 py-1 rounded-full text-xs font-semibold transition-colors ${
+        className={`cursor-pointer px-2.5 py-1 rounded-full text-xs font-semibold transition-colors ${
           i18n.language === "en"
             ? "bg-white text-gray-900 shadow-sm"
             : "text-gray-500 hover:text-gray-700"
@@ -22,7 +22,7 @@ const LanguageSwitcher = () => {
       </button>
       <button
         onClick={() => changeLanguage("ka")}
-        className={`px-2.5 py-1 rounded-full text-xs font-semibold transition-colors ${
+        className={`cursor-pointer px-2.5 py-1 rounded-full text-xs font-semibold transition-colors ${
           i18n.language === "ka"
             ? "bg-white text-gray-900 shadow-sm"
             : "text-gray-500 hover:text-gray-700"

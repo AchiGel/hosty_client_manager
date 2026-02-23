@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../LanguageSwitcher";
 
 const MainNav = () => {
+  const { t } = useTranslation();
   return (
     <nav className="shrink-0 h-16 bg-white border-b border-gray-200 flex items-center justify-between px-6">
       <div className="flex items-center gap-4">
@@ -22,7 +24,7 @@ const MainNav = () => {
           </svg>
           <input
             type="text"
-            placeholder="Search..."
+            placeholder={t("common.search") + "..."}
             className="h-9 pl-9 pr-4 w-64 bg-gray-50 border border-gray-200 rounded-md text-sm placeholder:text-gray-400 text-gray-900 focus:ring-2 focus:ring-[#c5a667]/50 focus:border-[#c5a667] focus:outline-none"
           />
         </div>

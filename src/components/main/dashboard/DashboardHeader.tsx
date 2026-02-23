@@ -1,7 +1,17 @@
+import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 
 const DashboardHeader = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const formattedDate = useMemo(() => {
+    return new Intl.DateTimeFormat(i18n.language, {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    }).format(new Date());
+  }, [i18n.language]);
+
   return (
     <div className="flex flex-wrap justify-between items-end gap-4">
       <div>
@@ -11,7 +21,7 @@ const DashboardHeader = () => {
         <p className="text-gray-500 mt-1">{t("dashboard.subTitle")}</p>
       </div>
       <div className="text-right hidden sm:block">
-        <p className="text-lg font-medium text-gray-900">February 18, 2026</p>
+        <p className="text-lg font-medium text-gray-900">{formattedDate}</p>
         <div className="flex items-center justify-end gap-1 text-sm text-green-600">
           <svg
             xmlns="http://www.w3.org/2000/svg"
