@@ -64,6 +64,16 @@
     "active": "Active",
     "archived": "Archived"
   },
+  "shifts": {
+    "title": "Shift Management",
+    "subTitle": "Create shifts and assign staff members",
+    "newShift": "Create Shift",
+    "everyDay": "Every day",
+    "weekdays": "Weekdays",
+    "assignedStaff": "Assigned staff",
+    "members": "Members",
+    "manageStaff": "Manage Staff"
+  },
   "common": {
     "loading": "Loading...",
     "error": "Error",
