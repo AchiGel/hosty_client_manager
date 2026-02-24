@@ -79,10 +79,14 @@
     "subTitle": "Manage guest requests efficiently.",
     "export": "Export",
     "newRequest": "New Request",
-    "weekdays": "Weekdays",
-    "assignedStaff": "Assigned staff",
-    "members": "Members",
-    "manageStaff": "Manage Staff"
+    "filters": "Filters",
+    "category": "Category",
+    "status": "Status",
+    "department": "Department",
+    "shift": "Shift",
+    "staff": "Staff",
+    "room": "Room",
+    "all": "All"
   },
   "common": {
     "loading": "Loading...",
