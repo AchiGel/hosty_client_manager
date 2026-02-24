@@ -74,6 +74,16 @@
     "members": "Members",
     "manageStaff": "Manage Staff"
   },
+  "requests": {
+    "title": "Request Management",
+    "subTitle": "Manage guest requests efficiently.",
+    "export": "Export",
+    "newRequest": "New Request",
+    "weekdays": "Weekdays",
+    "assignedStaff": "Assigned staff",
+    "members": "Members",
+    "manageStaff": "Manage Staff"
+  },
   "common": {
     "loading": "Loading...",
     "error": "Error",

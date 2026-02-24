@@ -1,5 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { STAFF_DATA, STAFF_TABLE_HEADER } from "../../../constants/staffData";
+import {
+  ClockIcon,
+  EllipsisVerticalIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+} from "../../assets";
 
 const StaffTable = () => {
   const { t } = useTranslation();
@@ -59,21 +65,7 @@ const StaffTable = () => {
                     className={`inline-flex items-center gap-1.5 text-sm  ${sd.shift == "notAssigned" ? "text-gray-400 italic" : "text-gray-700"}`}
                   >
                     {sd.shift == "notAssigned" ? null : (
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-clock h-3.5 w-3.5 text-gray-400"
-                      >
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                      </svg>
+                      <ClockIcon />
                     )}
 
                     {t(shiftTranslationKeys[sd.shift] || sd.shift)}
@@ -101,22 +93,7 @@ const StaffTable = () => {
                 </td>
                 <td className="px-6 py-4 text-right">
                   <button className="text-gray-400 hover:text-gray-900 p-1 rounded hover:bg-gray-100 transition-colors">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="lucide lucide-ellipsis-vertical h-5 w-5"
-                    >
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="12" cy="5" r="1"></circle>
-                      <circle cx="12" cy="19" r="1"></circle>
-                    </svg>
+                    <EllipsisVerticalIcon />
                   </button>
                 </td>
               </tr>
@@ -130,36 +107,10 @@ const StaffTable = () => {
         </span>
         <div className="flex gap-2">
           <button className="size-8 rounded flex items-center justify-center border border-gray-200 text-gray-400 disabled:opacity-50">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-chevron-left h-4 w-4"
-            >
-              <path d="m15 18-6-6 6-6"></path>
-            </svg>
+            <ChevronLeftIcon />
           </button>
           <button className="size-8 rounded flex items-center justify-center border border-gray-200 text-gray-500">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-chevron-right h-4 w-4"
-            >
-              <path d="m9 18 6-6-6-6"></path>
-            </svg>
+            <ChevronRightIcon />
           </button>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../LanguageSwitcher";
+import { SearchIcon, ChevronDownIcon } from "../assets";
 
 const MainNav = () => {
   const { t } = useTranslation();
@@ -7,21 +8,7 @@ const MainNav = () => {
     <nav className="shrink-0 h-16 bg-white border-b border-gray-200 flex items-center justify-between px-6">
       <div className="flex items-center gap-4">
         <div className="relative">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="lucide lucide-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 h-4 w-4"
-          >
-            <circle cx="11" cy="11" r="8"></circle>
-            <path d="m21 21-4.3-4.3"></path>
-          </svg>
+          <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 h-4 w-4" />
           <input
             type="text"
             placeholder={t("common.search") + "..."}
@@ -39,20 +26,7 @@ const MainNav = () => {
           <div className="hidden sm:block">
             <p className="text-sm font-medium text-gray-900">Nina Williams</p>
           </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="lucide lucide-chevron-down h-4 w-4 text-gray-400"
-          >
-            <path d="m6 9 6 6 6-6"></path>
-          </svg>
+          <ChevronDownIcon className="h-4 w-4 text-gray-400" />
         </div>
       </div>
     </nav>

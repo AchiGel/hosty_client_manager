@@ -1,5 +1,13 @@
+import RequestsBody from "../components/main/requests/RequestsBody";
+import RequestsHeader from "../components/main/requests/RequestsHeader";
+
 const Requests = () => {
-  return <div>Requests</div>;
+  return (
+    <>
+      <RequestsHeader />
+      <RequestsBody />
+    </>
+  );
 };
 
 export default Requests;
