@@ -101,7 +101,8 @@
     "today": "Today",
     "last7Days": "Last 7 Days",
     "last30Days": "Last 30 Days",
-    "custom": "Custom"
+    "custom": "Custom",
+    "departmentPerformance": "Department Performance"
   },
   "common": {
     "loading": "Loading...",

@@ -101,7 +101,8 @@
     "today": "დღეს",
     "last7Days": "ბოლო 7 დღე",
     "last30Days": "ბოლო 30 დღე",
-    "custom": "სხვა"
+    "custom": "სხვა",
+    "departmentPerformance": "დეპარტამენტის შესრულება"
   },
   "common": {
     "loading": "იტვირთება...",

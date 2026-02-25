@@ -95,7 +95,6 @@ const AnalyticsRequestsOverTime = () => {
       labels: chartData.labels,
       datasets: [
         {
-          label: t("analytics.requests"),
           data: chartData.data,
           borderColor: "#c9a65e",
           backgroundColor: "rgba(201, 166, 94, 0.1)",
@@ -111,13 +110,13 @@ const AnalyticsRequestsOverTime = () => {
         },
       ],
     }),
-    [chartData, t],
+    [chartData],
   );
 
   const options = useMemo(
     () => ({
       responsive: true,
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
       plugins: {
         legend: {
           display: false,
@@ -225,7 +224,7 @@ const AnalyticsRequestsOverTime = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex-1 min-h-0">
+      <div className="w-full h-72">
         <Line data={data} options={options} />
       </div>
     </div>
