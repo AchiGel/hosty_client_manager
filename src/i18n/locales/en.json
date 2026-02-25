@@ -104,6 +104,27 @@
     "custom": "Custom",
     "departmentPerformance": "Department Performance"
   },
+  "integration": {
+    "title": "Mews Integration Status",
+    "subTitle": "Monitor Mews PMS connection, sync activity, and errors.",
+    "triggerManualSync": "Trigger Manual Sync",
+    "connection": "Connection",
+    "environment": "Environment",
+    "lastSync": "Last Sync",
+    "apiHealth": "API Health",
+    "connected": "Connected",
+    "production": "Production",
+    "ok": "OK",
+    "syncActivity": "Sync Activity",
+    "guestData": "Guest Data",
+    "reservations": "Reservations",
+    "roomStatus": "Room Status",
+    "recentErrors": "Recent Errors",
+    "last": "Last",
+    "date": "Date",
+    "errorType": "Error Type",
+    "description": "Description"
+  },
   "common": {
     "loading": "Loading...",
     "error": "Error",
