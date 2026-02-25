@@ -88,6 +88,16 @@
     "room": "Room",
     "all": "All"
   },
+  "analytics": {
+    "title": "Analytics",
+    "subTitle": "Operational performance metrics and insights.",
+    "totalRequests": "Total Requests",
+    "completed": "Completed",
+    "active": "Active",
+    "avgTime": "Avg. Time",
+    "mostLoaded": "Most Loaded",
+    "peakHour": "Peak Hour"
+  },
   "common": {
     "loading": "Loading...",
     "error": "Error",
