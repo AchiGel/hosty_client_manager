@@ -96,7 +96,12 @@
     "active": "Active",
     "avgTime": "Avg. Time",
     "mostLoaded": "Most Loaded",
-    "peakHour": "Peak Hour"
+    "peakHour": "Peak Hour",
+    "requestsOverTime": "Requests Over Time",
+    "today": "Today",
+    "last7Days": "Last 7 Days",
+    "last30Days": "Last 30 Days",
+    "custom": "Custom"
   },
   "common": {
     "loading": "Loading...",

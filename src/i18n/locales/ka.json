@@ -96,7 +96,12 @@
     "active": "აქტიური",
     "avgTime": "საშ. დრო",
     "mostLoaded": "ყველაზე დატვირთული",
-    "peakHour": "პიკის საათი"
+    "peakHour": "პიკის საათი",
+    "requestsOverTime": "მოთხოვნები დროის მიხედვით",
+    "today": "დღეს",
+    "last7Days": "ბოლო 7 დღე",
+    "last30Days": "ბოლო 30 დღე",
+    "custom": "სხვა"
   },
   "common": {
     "loading": "იტვირთება...",
