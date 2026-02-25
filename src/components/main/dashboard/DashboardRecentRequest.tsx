@@ -82,7 +82,7 @@ const DashboardRecentRequest = () => {
                   </span>
                 </td>
                 <td className="px-6 py-4 text-right">
-                  <button className="text-gray-400 hover:text-[#c5a667] transition-colors">
+                  <button className="text-gray-400 hover:text-[#c5a667] transition-colors cursor-pointer">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"

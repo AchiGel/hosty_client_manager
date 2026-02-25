@@ -92,7 +92,7 @@ const StaffTable = () => {
                   </span>
                 </td>
                 <td className="px-6 py-4 text-right">
-                  <button className="text-gray-400 hover:text-gray-900 p-1 rounded hover:bg-gray-100 transition-colors">
+                  <button className="cursor-pointer text-gray-400 hover:text-gray-900 p-1 rounded hover:bg-gray-100 transition-colors">
                     <EllipsisVerticalIcon />
                   </button>
                 </td>
@@ -106,10 +106,10 @@ const StaffTable = () => {
           {t("common.showing") + " 7 " + t("common.of") + " 7"}
         </span>
         <div className="flex gap-2">
-          <button className="size-8 rounded flex items-center justify-center border border-gray-200 text-gray-400 disabled:opacity-50">
+          <button className="cursor-pointer size-8 rounded flex items-center justify-center border border-gray-200 text-gray-400 disabled:opacity-50">
             <ChevronLeftIcon />
           </button>
-          <button className="size-8 rounded flex items-center justify-center border border-gray-200 text-gray-500">
+          <button className="cursor-pointer size-8 rounded flex items-center justify-center border border-gray-200 text-gray-500">
             <ChevronRightIcon />
           </button>
         </div>

@@ -194,7 +194,7 @@ const Registration = () => {
             </div>
             {/* Submit button */}
             <button
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm ring-[#f6f7f9] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a65e] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow-sm hover:shadow-md h-10 px-4 py-2 w-full bg-[#c9a65e] text-[#10192d] hover:bg-[#dcc9a3] font-semibold"
+              className="cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm ring-[#f6f7f9] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a65e] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow-sm hover:shadow-md h-10 px-4 py-2 w-full bg-[#c9a65e] text-[#10192d] hover:bg-[#dcc9a3] font-semibold"
               type="submit"
             >
               რეგისტრაცია

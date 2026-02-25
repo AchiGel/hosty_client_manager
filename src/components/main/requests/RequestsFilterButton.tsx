@@ -32,7 +32,7 @@ const FilterButton = ({
       {isOpen && (
         <div className="absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-10 min-w-max">
           <button
-            className="w-full text-left px-4 py-2 hover:bg-gray-50 text-sm text-gray-700 hover:text-gray-900 font-medium"
+            className="cursor-pointer w-full text-left px-4 py-2 hover:bg-gray-50 text-sm text-gray-700 hover:text-gray-900 font-medium"
             onClick={() => {
               onSelect("All");
               onToggle();
@@ -43,7 +43,7 @@ const FilterButton = ({
           {options.map((option) => (
             <button
               key={option}
-              className="w-full text-left px-4 py-2 hover:bg-gray-50 text-sm text-gray-700 hover:text-gray-900 border-t border-gray-100"
+              className="cursor-pointer w-full text-left px-4 py-2 hover:bg-gray-50 text-sm text-gray-700 hover:text-gray-900 border-t border-gray-100"
               onClick={() => {
                 onSelect(option);
                 onToggle();

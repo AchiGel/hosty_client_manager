@@ -130,7 +130,7 @@ const RequestsBodyTable = () => {
       <div className="border-t border-gray-200 px-6 py-4 flex items-center justify-between">
         <span className="text-xs text-gray-500">Showing 1-6 of 6</span>
         <div className="flex gap-2">
-          <button className="size-8 rounded flex items-center justify-center border border-gray-200 text-gray-400 hover:bg-gray-50 transition-colors disabled:opacity-50">
+          <button className="cursor-pointer size-8 rounded flex items-center justify-center border border-gray-200 text-gray-400 hover:bg-gray-50 transition-colors disabled:opacity-50">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -146,7 +146,7 @@ const RequestsBodyTable = () => {
               <path d="m15 18-6-6 6-6"></path>
             </svg>
           </button>
-          <button className="size-8 rounded flex items-center justify-center border border-gray-200 text-gray-500 hover:bg-gray-50 transition-colors">
+          <button className="cursor-pointer size-8 rounded flex items-center justify-center border border-gray-200 text-gray-500 hover:bg-gray-50 transition-colors">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

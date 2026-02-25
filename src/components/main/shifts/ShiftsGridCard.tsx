@@ -21,7 +21,7 @@ const ShiftsGridCard = () => {
           <div className="size-10 rounded-lg bg-[#c5a667]/10 flex items-center justify-center text-[#c5a667]">
             <ClockIcon className="h-5 w-5 text-[#c5a667]" />
           </div>
-          <button className="text-gray-400 hover:text-gray-900 p-1 rounded hover:bg-gray-100">
+          <button className="cursor-pointer text-gray-400 hover:text-gray-900 p-1 rounded hover:bg-gray-100">
             <EllipsisVerticalIcon />
           </button>
         </div>

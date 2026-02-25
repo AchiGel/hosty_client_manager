@@ -1,9 +1,5 @@
 import { useTranslation } from "react-i18next";
-import {
-  Building2Icon,
-  EllipsisVerticalIcon,
-  UsersIcon,
-} from "../../assets";
+import { Building2Icon, EllipsisVerticalIcon, UsersIcon } from "../../assets";
 
 const DepartmentsCard = ({
   department,
@@ -25,7 +21,7 @@ const DepartmentsCard = ({
             <div className="size-10 rounded-lg bg-[#c5a667]/10 flex items-center justify-center text-[#c5a667]">
               <Building2Icon />
             </div>
-            <button className="text-gray-400 hover:text-gray-900 p-1 rounded hover:bg-gray-100">
+            <button className="text-gray-400 hover:text-gray-900 p-1 rounded hover:bg-gray-100 cursor-pointer">
               <EllipsisVerticalIcon />
             </button>
           </div>

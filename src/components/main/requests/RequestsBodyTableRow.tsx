@@ -73,7 +73,7 @@ const RequestsBodyTableRow = ({
         </div>
       </td>
       <td className="py-4 px-6 text-right">
-        <button className="text-gray-400 hover:text-[#c5a667] transition-colors p-1 rounded-full hover:bg-gray-100">
+        <button className="text-gray-400 hover:text-[#c5a667] transition-colors p-1 rounded-full hover:bg-gray-100 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
