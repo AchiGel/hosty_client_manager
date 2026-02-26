@@ -69,7 +69,7 @@ const CalendarMonth = ({
             key={idx}
             onClick={() => day && onDateClick(day, monthOffset)}
             disabled={!day}
-            className={`p-2 text-xs rounded transition-colors ${
+            className={`cursor-pointer p-2 text-xs rounded transition-colors ${
               !day
                 ? "invisible"
                 : isDateSelected(day, monthOffset)
@@ -143,7 +143,7 @@ const DateRangeCalendar = ({
             newDate.setMonth(newDate.getMonth() - 1);
             setCalendarMonth(newDate);
           }}
-          className="p-1 hover:bg-gray-100 rounded transition-colors self-baseline"
+          className="cursor-pointer p-1 hover:bg-gray-100 rounded transition-colors self-baseline"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +186,7 @@ const DateRangeCalendar = ({
             newDate.setMonth(newDate.getMonth() + 1);
             setCalendarMonth(newDate);
           }}
-          className="p-1 hover:bg-gray-100 rounded transition-colors self-baseline"
+          className="cursor-pointer p-1 hover:bg-gray-100 rounded transition-colors self-baseline"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

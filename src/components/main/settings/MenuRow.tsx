@@ -41,7 +41,7 @@ const MenuRow = memo<MenuRowProps>(({ item, t, onDelete }) => (
     <td className="px-6 py-4 text-right">
       <button
         onClick={() => onDelete(item.id)}
-        className="p-1.5 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded transition-colors"
+        className="cursor-pointer p-1.5 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded transition-colors"
         aria-label={`Delete ${item.name}`}
       >
         <TrashIcon />
