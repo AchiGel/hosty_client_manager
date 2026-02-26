@@ -1,0 +1,81 @@
+export const REQUESTS_DATA = [
+  {
+    id: 1,
+    room: 304,
+    roomType: "Deluxe",
+    category: "Housekeeping",
+    request: {
+      requestedItem: "Extra towels",
+      requestDetails: "Guest requested 2 sets of towels.",
+    },
+    time: "10m",
+    status: "New",
+    assignedTo: "Unassigned",
+  },
+  {
+    id: 2,
+    room: 412,
+    roomType: "Standard",
+    category: "Technical",
+    request: {
+      requestedItem: "Wi-Fi connection issue",
+      requestDetails: "Guest unable to connect to room Wi-Fi network.",
+    },
+    time: "5m",
+    status: "New",
+    assignedTo: "Unassigned",
+  },
+  {
+    id: 3,
+    room: 610,
+    roomType: "Suite",
+    category: "Maintenance",
+    request: {
+      requestedItem: "Air conditioning repair",
+      requestDetails: "AC unit not cooling. Temperature too warm.",
+    },
+    time: "15m",
+    status: "Review",
+    assignedTo: "David Kim",
+  },
+  {
+    id: 4,
+    room: 315,
+    roomType: "Double",
+    category: "Housekeeping",
+    request: {
+      requestedItem: "Housekeeping service",
+      requestDetails: "Deep cleaning requested for bathroom and bedroom.",
+    },
+    time: "45m",
+    status: "InProgress",
+    assignedTo: "Sarah Williams",
+  },
+  {
+    id: 5,
+    room: 508,
+    roomType: "Deluxe",
+    category: "Guest Services",
+    request: {
+      requestedItem: "Room transfer - Noise complaint",
+      requestDetails:
+        "Guest requested room change due to noise from adjacent room.",
+    },
+    time: "30m",
+    status: "InProgress",
+    assignedTo: "Christian Brown",
+  },
+  {
+    id: 6,
+    room: 201,
+    roomType: "Standard",
+    category: "Room Service",
+    request: {
+      requestedItem: "Minibar refill",
+      requestDetails: "Guest requesting beverages and snacks restocking.",
+    },
+    time: "3h",
+    status: "Completed",
+    assignedTo: "Jessica Martinez",
+  },
+];
