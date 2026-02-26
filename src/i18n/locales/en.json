@@ -129,7 +129,9 @@
     "title": "Settings",
     "subTitle": "Manage hotel services, information, and restaurant menu.",
     "services": "Services",
-    "servicesSub": "Enable or disable guest-facing services"
+    "servicesSub": "Enable or disable guest-facing services",
+    "hotelInformation": "Hotel Information",
+    "hotelInformationSub": "Update WiFi credentials, contact info, and more"
   },
   "common": {
     "loading": "Loading...",
