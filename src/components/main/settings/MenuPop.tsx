@@ -35,10 +35,10 @@ const MenuPop = ({
             {t("settings.category")}
           </label>
           <select className="w-full h-10 px-3 border border-gray-200 rounded-md text-sm">
-            <option value="Starters">Starters</option>
-            <option value="Main Course">Main Course</option>
-            <option value="Desserts">Desserts</option>
-            <option value="Drinks">Drinks</option>
+            <option value="Starters">{t("settings.starters")}</option>
+            <option value="Main Course">{t("settings.mainCourse")}</option>
+            <option value="Desserts">{t("settings.desserts")}</option>
+            <option value="Drinks">{t("settings.drinks")}</option>
           </select>
         </div>
         <div className="flex gap-2">

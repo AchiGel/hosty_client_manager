@@ -147,7 +147,11 @@
     "category": "Category",
     "price": "Price",
     "status": "Status",
-    "actions": "Actions"
+    "actions": "Actions",
+    "starters": "Starters",
+    "mainCourse": "Main Course",
+    "desserts": "Desserts",
+    "drinks": "Drinks"
   },
   "common": {
     "loading": "Loading...",
