@@ -131,7 +131,23 @@
     "services": "Services",
     "servicesSub": "Enable or disable guest-facing services",
     "hotelInformation": "Hotel Information",
-    "hotelInformationSub": "Update WiFi credentials, contact info, and more"
+    "hotelInformationSub": "Update WiFi credentials, contact info, and more",
+    "WiFiNetworkName": "WiFi Network Name",
+    "WiFiPassword": "WiFi Password",
+    "FrontDeskPhone": "Front Desk Phone",
+    "EmergencyPhone": "Emergency Phone",
+    "Check-inTime": "Check-in Time",
+    "Check-outTime": "Check-out Time",
+    "HotelAddress": "Hotel Address",
+    "saveChanges": "Save changes",
+    "restaurantMenu": "Restaurant Menu",
+    "restaurantMenuSub": "Manage menu items and availability",
+    "addItem": "Add Item",
+    "itemName": "Item Name",
+    "category": "Category",
+    "price": "Price",
+    "status": "Status",
+    "actions": "Actions"
   },
   "common": {
     "loading": "Loading...",
@@ -149,7 +165,9 @@
     "room": "Room",
     "ago": "Ago",
     "showing": "Showing",
-    "of": "of"
+    "of": "of",
+    "available": "Available",
+    "unavailable": "Unavailable"
   },
   "auth": {
     "login": "Login",

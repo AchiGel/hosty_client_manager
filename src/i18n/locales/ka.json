@@ -131,7 +131,23 @@
     "services": "სერვისები",
     "servicesSub": "ჩართეთ ან გამორთეთ სტუმრებისთვის ხელმისაწვდომი სერვისები",
     "hotelInformation": "სასტუმროს ინფორმაცია",
-    "hotelInformationSub": "განაახლეთ WiFi მონაცემები, საკონტაქტო ინფო და სხვა"
+    "hotelInformationSub": "განაახლეთ WiFi მონაცემები, საკონტაქტო ინფო და სხვა",
+    "WiFiNetworkName": "WiFi ქსელის სახელი",
+    "WiFiPassword": "WiFi პაროლი",
+    "FrontDeskPhone": "რეცეფციის ტელეფონი",
+    "EmergencyPhone": "საგანგებო ტელეფონი",
+    "Check-inTime": "შესვლის დრო",
+    "Check-outTime": "გასვლის დრო",
+    "HotelAddress": "სასტუმროს მისამართი",
+    "saveChanges": "ცვლილებების შენახვა",
+    "restaurantMenu": "რესტორნის მენიუ",
+    "restaurantMenuSub": "მართეთ მენიუს ერთეულები და ხელმისაწვდომობა",
+    "addItem": "ერთეულის დამატება",
+    "itemName": "ერთეულის სახელი",
+    "category": "კატეგორია",
+    "price": "ფასი",
+    "status": "სტატუსი",
+    "actions": "მოქმედებები"
   },
   "common": {
     "loading": "იტვირთება...",
@@ -149,7 +165,9 @@
     "room": "ოთახი",
     "ago": "წინ",
     "showing": "ნაჩვენებია",
-    "of": "დან"
+    "of": "დან",
+    "available": "ხელმისაწვდომია",
+    "unavailable": "მიუწვდომელია"
   },
   "auth": {
     "login": "ავტორიზაცია",

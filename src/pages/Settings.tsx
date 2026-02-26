@@ -1,5 +1,6 @@
 import SettingsHeader from "../components/main/settings/SettingsHeader";
 import SettingsHotelInformation from "../components/main/settings/SettingsHotelInformation";
+import SettingsRestaurantMenu from "../components/main/settings/SettingsRestaurantMenu";
 import SettingsServices from "../components/main/settings/SettingsServices";
 
 const Settings = () => {
@@ -9,6 +10,7 @@ const Settings = () => {
         <SettingsHeader />
         <SettingsServices />
         <SettingsHotelInformation />
+        <SettingsRestaurantMenu />
       </div>
     </div>
   );
