@@ -125,6 +125,12 @@
     "errorType": "Error Type",
     "description": "Description"
   },
+  "settings": {
+    "title": "Settings",
+    "subTitle": "Manage hotel services, information, and restaurant menu.",
+    "services": "Services",
+    "servicesSub": "Enable or disable guest-facing services"
+  },
   "common": {
     "loading": "Loading...",
     "error": "Error",
