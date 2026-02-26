@@ -1,55 +1,7 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-
-interface ErrorRecord {
-  date: string;
-  type: string;
-  description: string;
-}
-
-const ERROR_DATA: ErrorRecord[] = [
-  {
-    date: "2026-02-17 09:44",
-    type: "Sync Timeout",
-    description: "Room status sync timed out after 30s",
-  },
-  {
-    date: "2026-02-16 22:10",
-    type: "Rate Limit",
-    description: "API rate limit exceeded, retried after 60s",
-  },
-  {
-    date: "2026-02-16 14:30",
-    type: "Data Mismatch",
-    description: "Reservation #4821 had invalid room reference",
-  },
-  {
-    date: "2026-02-15 08:15",
-    type: "Auth Warning",
-    description: "Token refresh triggered automatically",
-  },
-  {
-    date: "2026-02-14 19:00",
-    type: "Sync Timeout",
-    description: "Guest data sync timed out during peak hours",
-  },
-];
-
-const ErrorBadge = ({ type }: { type: string }) => (
-  <span className="inline-flex px-2 py-0.5 rounded text-xs font-medium bg-orange-50 text-orange-700">
-    {type}
-  </span>
-);
-
-const ErrorRow = ({ error }: { error: ErrorRecord }) => (
-  <tr className="hover:bg-gray-50 transition-colors">
-    <td className="px-6 py-3 text-gray-500 whitespace-nowrap">{error.date}</td>
-    <td className="px-6 py-3">
-      <ErrorBadge type={error.type} />
-    </td>
-    <td className="px-6 py-3 text-gray-700">{error.description}</td>
-  </tr>
-);
+import { ERROR_DATA } from "../../../constants/errorData";
+import ErrorRow from "./ErrorRow";
 
 const AlertIcon = () => (
   <svg
