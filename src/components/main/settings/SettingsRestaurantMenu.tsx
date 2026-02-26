@@ -1,84 +1,8 @@
 import { useTranslation } from "react-i18next";
-import { memo, useCallback, type ReactNode } from "react";
-import type { TFunction } from "i18next";
-
-interface MenuItem {
-  id: number;
-  name: string;
-  category: string;
-  price: string;
-  available: boolean;
-}
-
-interface StatusBadgeProps {
-  available: boolean;
-  t: TFunction;
-}
-
-interface MenuRowProps {
-  item: MenuItem;
-  t: TFunction;
-  onDelete: (id: number) => void;
-}
-
-const MENU_ITEMS: MenuItem[] = [
-  {
-    id: 1,
-    name: "Georgian Khachapuri",
-    category: "Main Course",
-    price: "₾25",
-    available: true,
-  },
-  {
-    id: 2,
-    name: "Khinkali (10 pcs)",
-    category: "Main Course",
-    price: "₾18",
-    available: true,
-  },
-  {
-    id: 3,
-    name: "Caesar Salad",
-    category: "Starters",
-    price: "₾15",
-    available: true,
-  },
-  {
-    id: 4,
-    name: "Grilled Salmon",
-    category: "Main Course",
-    price: "₾35",
-    available: false,
-  },
-  {
-    id: 5,
-    name: "Tiramisu",
-    category: "Desserts",
-    price: "₾12",
-    available: true,
-  },
-];
-
-const TrashIcon = memo(() => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="lucide lucide-trash2 w-4 h-4"
-  >
-    <path d="M3 6h18"></path>
-    <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
-    <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
-    <line x1="10" x2="10" y1="11" y2="17"></line>
-    <line x1="14" x2="14" y1="11" y2="17"></line>
-  </svg>
-));
+import { memo, useCallback, useState, type ReactNode } from "react";
+import MenuPop from "./MenuPop";
+import { MENU_ITEMS } from "../../../constants/menuItems";
+import MenuRow from "./MenuRow";
 
 const PlusIcon = memo(() => (
   <svg
@@ -98,51 +22,17 @@ const PlusIcon = memo(() => (
   </svg>
 ));
 
-const StatusBadge = memo<StatusBadgeProps>(({ available, t }) => (
-  <button
-    className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium transition-colors ${
-      available
-        ? "bg-green-50 text-green-600 hover:bg-green-100"
-        : "bg-red-50 text-red-600 hover:bg-red-100"
-    }`}
-  >
-    <span
-      className={`w-1.5 h-1.5 rounded-full ${available ? "bg-green-600" : "bg-red-600"}`}
-    ></span>
-    {t(available ? "common.available" : "common.unavailable")}
-  </button>
-));
-
-const MenuRow = memo<MenuRowProps>(({ item, t, onDelete }) => (
-  <tr className="hover:bg-gray-50 transition-colors">
-    <td className="px-6 py-4 font-medium text-gray-900">{item.name}</td>
-    <td className="px-6 py-4 text-gray-500">{item.category}</td>
-    <td className="px-6 py-4 text-gray-900">{item.price}</td>
-    <td className="px-6 py-4">
-      <StatusBadge available={item.available} t={t} />
-    </td>
-    <td className="px-6 py-4 text-right">
-      <button
-        onClick={() => onDelete(item.id)}
-        className="p-1.5 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded transition-colors"
-        aria-label={`Delete ${item.name}`}
-      >
-        <TrashIcon />
-      </button>
-    </td>
-  </tr>
-));
-
 const SettingsRestaurantMenu = (): ReactNode => {
   const { t } = useTranslation();
 
-  const [openAddMenuWindow, setOpenAddMenuWindow] = useState()
+  const [openAddMenuWindow, setOpenAddMenuWindow] = useState(false);
 
   const handleDelete = useCallback((id: number): void => {
     console.log(`Delete item ${id}`);
   }, []);
 
   const handleAddItem = useCallback((): void => {
+    setOpenAddMenuWindow(true);
     console.log("Add new item");
   }, []);
 
@@ -165,7 +55,9 @@ const SettingsRestaurantMenu = (): ReactNode => {
           {t("settings.addItem")}
         </button>
       </div>
-    
+      {openAddMenuWindow && (
+        <MenuPop setOpenAddMenuWindow={setOpenAddMenuWindow} />
+      )}
       <div className="overflow-x-auto">
         <table className="w-full text-left">
           <thead>
