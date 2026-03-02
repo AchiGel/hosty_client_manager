@@ -30,7 +30,7 @@ const DashboardTopPerformers = () => {
         </div>
         <Link
           className="text-sm font-medium text-[#c5a667] hover:text-[#b09358]"
-          to={"/team"}
+          to={"/staff"}
         >
           {t("common.fullList")}
         </Link>

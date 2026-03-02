@@ -12,7 +12,7 @@ const DepartmentsArchived = () => {
         <div className="opacity-60">
           <DepartmentsCard
             department={"Spa"}
-            status={"Archived"}
+            status={"archived"}
             staffNumber={3}
             activeRequests={0}
           />

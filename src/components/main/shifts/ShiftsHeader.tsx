@@ -1,8 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { PlusIcon } from "../../assets";
+import AppModal from "../../ui/AppModal";
+import ShiftsCreateModal from "./ShiftsCreateModal";
+import { useState } from "react";
 
 const ShiftsHeader = () => {
   const { t } = useTranslation();
+  const [openCreateShift, setOpenCreateShift] = useState(false);
   return (
     <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
       <div>
@@ -11,10 +15,20 @@ const ShiftsHeader = () => {
         </h1>
         <p className="text-gray-500 mt-1">{t("shifts.subTitle")}</p>
       </div>
-      <button className="cursor-pointer inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium ring-[#f6f7f9] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a65e] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow-sm hover:shadow-md h-10 px-4 py-2 bg-[#c5a667] hover:bg-[#b09358] text-white gap-2">
+      <button
+        onClick={() => setOpenCreateShift(true)}
+        className="cursor-pointer inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium ring-[#f6f7f9] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a65e] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow-sm hover:shadow-md h-10 px-4 py-2 bg-[#c5a667] hover:bg-[#b09358] text-white gap-2"
+      >
         <PlusIcon />
         {t("shifts.newShift")}
       </button>
+      <AppModal
+        open={openCreateShift}
+        onOpenChange={setOpenCreateShift}
+        title="Create Shift"
+      >
+        <ShiftsCreateModal />
+      </AppModal>
     </div>
   );
 };

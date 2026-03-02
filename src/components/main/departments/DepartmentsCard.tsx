@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { Building2Icon, EllipsisVerticalIcon, UsersIcon } from "../../assets";
+import { Building2Icon, UsersIcon } from "../../assets";
+import DepartmentsMenuPop from "./DepartmentsMenuPop";
+import DepartmentsArchivedPop from "./DepartmentsArchivedPop";
 
 const DepartmentsCard = ({
   department,
@@ -21,9 +23,11 @@ const DepartmentsCard = ({
             <div className="size-10 rounded-lg bg-[#c5a667]/10 flex items-center justify-center text-[#c5a667]">
               <Building2Icon />
             </div>
-            <button className="text-gray-400 hover:text-gray-900 p-1 rounded hover:bg-gray-100 cursor-pointer">
-              <EllipsisVerticalIcon />
-            </button>
+            {status == "archived" ? (
+              <DepartmentsArchivedPop />
+            ) : (
+              <DepartmentsMenuPop />
+            )}
           </div>
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
             {department}

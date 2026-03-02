@@ -1,3 +1,5 @@
+import RequestMenuPop from "./RequestMenuPop";
+
 type RequestsTableRowType = {
   room: number;
   roomType: string;
@@ -72,25 +74,8 @@ const RequestsBodyTableRow = ({
           </div>
         </div>
       </td>
-      <td className="py-4 px-6 text-right">
-        <button className="text-gray-400 hover:text-[#c5a667] transition-colors p-1 rounded-full hover:bg-gray-100 cursor-pointer">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="lucide lucide-ellipsis-vertical h-5 w-5"
-          >
-            <circle cx="12" cy="12" r="1"></circle>
-            <circle cx="12" cy="5" r="1"></circle>
-            <circle cx="12" cy="19" r="1"></circle>
-          </svg>
-        </button>
+      <td className="py-4 px-6 text-right relative">
+        <RequestMenuPop />
       </td>
     </tr>
   );

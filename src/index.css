@@ -13,3 +13,8 @@
 body {
   font-family: "DM Sans", sans-serif;
 }
+
+.menu-item {
+  @apply relative flex cursor-pointer select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors
+  focus:bg-[#c9a65e];
+}

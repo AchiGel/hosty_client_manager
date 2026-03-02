@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
 import {
   ClockIcon,
-  EllipsisVerticalIcon,
   CalendarDaysIcon,
   XCloseIcon,
   UserPlusIcon,
 } from "../../assets";
+import ShiftsMenuPop from "./ShiftsMenuPop";
 
 const ShiftsGridCard = () => {
   const { t } = useTranslation();
@@ -21,9 +21,7 @@ const ShiftsGridCard = () => {
           <div className="size-10 rounded-lg bg-[#c5a667]/10 flex items-center justify-center text-[#c5a667]">
             <ClockIcon className="h-5 w-5 text-[#c5a667]" />
           </div>
-          <button className="cursor-pointer text-gray-400 hover:text-gray-900 p-1 rounded hover:bg-gray-100">
-            <EllipsisVerticalIcon />
-          </button>
+          <ShiftsMenuPop />
         </div>
         <h3 className="text-lg font-semibold text-gray-900">Morning</h3>
         <p className="text-sm text-gray-500 mt-1">06:00 - 14:00</p>

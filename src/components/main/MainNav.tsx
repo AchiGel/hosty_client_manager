@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../LanguageSwitcher";
 import { SearchIcon, ChevronDownIcon } from "../assets";
+import { Link } from "react-router-dom";
 
 const MainNav = () => {
   const { t } = useTranslation();
@@ -19,15 +20,17 @@ const MainNav = () => {
       <div className="flex items-center gap-4">
         <LanguageSwitcher />
         <div className="h-8 w-px bg-gray-200"></div>
-        <div className="flex items-center gap-3 cursor-pointer hover:bg-gray-50 rounded-lg px-2 py-1 transition-colors">
-          <div className="h-8 w-8 rounded-full bg-cover bg-center border border-gray-200">
-            X
+        <Link to="/settings">
+          <div className="flex items-center gap-3 cursor-pointer hover:bg-gray-50 rounded-lg px-2 py-1 transition-colors">
+            <div className="h-8 w-8 rounded-full bg-cover bg-center border border-gray-200">
+              X
+            </div>
+            <div className="hidden sm:block">
+              <p className="text-sm font-medium text-gray-900">Nina Williams</p>
+            </div>
+            <ChevronDownIcon className="h-4 w-4 text-gray-400" />
           </div>
-          <div className="hidden sm:block">
-            <p className="text-sm font-medium text-gray-900">Nina Williams</p>
-          </div>
-          <ChevronDownIcon className="h-4 w-4 text-gray-400" />
-        </div>
+        </Link>
       </div>
     </nav>
   );

@@ -11,7 +11,7 @@ const DashboardStaffOnShift = () => {
           {t("dashboard.staffOnShift")}
         </h3>
         <Link
-          to={"/team"}
+          to={"/staff"}
           className="text-sm font-medium text-[#c5a667] hover:text-[#b09358] flex items-center gap-1"
         >
           {t("common.all")}{" "}
