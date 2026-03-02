@@ -6,8 +6,12 @@ import {
   UserPlusIcon,
 } from "../../assets";
 import ShiftsMenuPop from "./ShiftsMenuPop";
+import AppModal from "../../ui/AppModal";
+import ShiftsManageModal from "./ShiftsManageModal";
+import { useState } from "react";
 
 const ShiftsGridCard = () => {
+  const [openManageShift, setOpenManageShift] = useState(false);
   const { t } = useTranslation();
   const SHIFT_STAFF = [
     { id: 1, initials: "EW", fullName: "Emma Wilson" },
@@ -55,11 +59,21 @@ const ShiftsGridCard = () => {
             </div>
           ))}
         </div>
-        <button className="cursor-pointer inline-flex items-center justify-center whitespace-nowrap font-medium ring-[#f6f7f9] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a65e] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-[#dcdfe5] bg-[#f6f7f9] hover:bg-[#c9a65e] hover:text-[#0f1729] h-9 rounded-md px-3 w-full mt-3 gap-1.5 text-xs">
+        <button
+          onClick={() => setOpenManageShift(true)}
+          className="cursor-pointer inline-flex items-center justify-center whitespace-nowrap font-medium ring-[#f6f7f9] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a65e] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-[#dcdfe5] bg-[#f6f7f9] hover:bg-[#c9a65e] hover:text-[#0f1729] h-9 rounded-md px-3 w-full mt-3 gap-1.5 text-xs"
+        >
           <UserPlusIcon />
           {t("shifts.manageStaff")}
         </button>
       </div>
+      <AppModal
+        open={openManageShift}
+        onOpenChange={setOpenManageShift}
+        title="Manage Staff - Morning"
+      >
+        <ShiftsManageModal />
+      </AppModal>
     </div>
   );
 };
