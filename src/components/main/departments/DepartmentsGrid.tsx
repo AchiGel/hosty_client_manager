@@ -10,7 +10,7 @@ const DepartmentsGrid = () => {
           department={dcd.department}
           status={dcd.status}
           staffNumber={dcd.staffNumber}
-          activeRequests={dcd.activeRequests}
+          products={dcd.products}
         />
       ))}
     </div>

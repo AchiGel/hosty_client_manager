@@ -62,7 +62,9 @@
     "newDepartment": "New Department",
     "staff": "Staff",
     "active": "Active",
-    "archived": "Archived"
+    "archived": "Archived",
+    "manageProducts": "Manage Products",
+    "products": "Products"
   },
   "shifts": {
     "title": "Shift Management",

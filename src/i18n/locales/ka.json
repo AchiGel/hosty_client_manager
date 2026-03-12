@@ -62,7 +62,9 @@
     "newDepartment": "ახალი დეპარტამენტი",
     "staff": "თანამშრომელი",
     "active": "აქტიური",
-    "archived": "არქივი"
+    "archived": "არქივი",
+    "manageProducts": "პროდუქტების მართვა",
+    "products": "პროდუქტი"
   },
   "shifts": {
     "title": "ცვლების მართვა",
