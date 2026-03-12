@@ -21,6 +21,7 @@ import Shifts from "./pages/Shifts.tsx";
 import Integration from "./pages/Integration.tsx";
 import SingleDepartment from "./pages/SingleDepartment.tsx";
 import SingleDepartmentItem from "./pages/SingleDepartmentItem.tsx";
+import Rooms from "./pages/Rooms.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,6 +39,7 @@ const router = createBrowserRouter(
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/integration" element={<Integration />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/rooms" element={<Rooms />} />
       </Route>
     </>,
   ),

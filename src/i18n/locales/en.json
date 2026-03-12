@@ -9,7 +9,8 @@
     "analytics": "Analytics",
     "integration": "Integration",
     "settings": "Settings",
-    "signOut": "Sign Out"
+    "signOut": "Sign Out",
+    "rooms": "Rooms"
   },
   "dashboard": {
     "welcome": "Hello",

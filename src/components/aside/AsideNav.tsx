@@ -19,6 +19,7 @@ const AsideNav = () => {
     Requests: "navigation.requests",
     Analytics: "navigation.analytics",
     Integration: "navigation.integration",
+    Rooms: "navigation.rooms",
   };
 
   return (
