@@ -1,6 +1,6 @@
-import { EllipsisVerticalIcon } from "../../assets";
 import BoxIcon from "../../assets/BoxIcon";
 import ItemsIcon from "../../assets/ItemsIcon";
+import SingleDepartmentMenuPop from "./SingleDepartmentMenuPop";
 
 const SingleDepartmentCard = () => {
   return (
@@ -17,23 +17,14 @@ const SingleDepartmentCard = () => {
               aria-checked="true"
               data-state="checked"
               value="on"
-              className="peer inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors data-[state=checked]:bg-primary data-[state=unchecked]:bg-input focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 scale-75"
+              className="peer inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors data-[state=checked]:bg-[#182543] data-[state=unchecked]:bg-[#dcdfe5] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 scale-75"
             >
               <span
                 data-state="checked"
-                className="pointer-events-none block h-5 w-5 rounded-full bg-background shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0"
+                className="pointer-events-none block h-5 w-5 rounded-full bg-[#f6f7f9] shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0"
               ></span>
             </button>
-            <button
-              className="text-gray-400 hover:text-gray-900 p-1 rounded hover:bg-gray-100 cursor-pointer"
-              type="button"
-              id="radix-:r4s:"
-              aria-haspopup="menu"
-              aria-expanded="false"
-              data-state="closed"
-            >
-              <EllipsisVerticalIcon />
-            </button>
+            <SingleDepartmentMenuPop />
           </div>
         </div>
         <h3 className="text-base font-semibold text-gray-900 mb-1">Towels</h3>
