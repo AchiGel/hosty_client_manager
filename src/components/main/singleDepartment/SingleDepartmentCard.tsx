@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BoxIcon from "../../assets/BoxIcon";
 import ItemsIcon from "../../assets/ItemsIcon";
 import SingleDepartmentMenuPop from "./SingleDepartmentMenuPop";
@@ -35,10 +36,13 @@ const SingleDepartmentCard = () => {
         </div>
       </div>
       <div className="border-t border-gray-100 p-3">
-        <button className="cursor-pointer inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 rounded-md px-3 w-full text-[#c5a667] hover:text-[#b09358] hover:bg-[#c5a667]/5 gap-1.5">
+        <Link
+          to={`${"towels"}`}
+          className="cursor-pointer inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-9 rounded-md px-3 w-full text-[#c5a667] hover:text-[#b09358] hover:bg-[#c5a667]/5 gap-1.5"
+        >
           <ItemsIcon />
           Manage Items
-        </button>
+        </Link>
       </div>
     </div>
   );
