@@ -1,14 +1,14 @@
-const DepartmentsModal = () => {
+const SingleDepartmentModal = () => {
   return (
     <>
       <div className="space-y-4 py-4">
         <div className="space-y-2">
           <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-            Department Name
+            Product Name
           </label>
           <input
             className="flex h-10 w-full rounded-md border border-[#dcdfe5] bg-[#f6f7f9] px-3 py-2 text-base ring-[#f6f7f9] file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a65e] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-            placeholder="e.g. Pool &amp; Beach"
+            placeholder="e.g. Towels"
             value=""
           />
         </div>
@@ -18,9 +18,37 @@ const DepartmentsModal = () => {
           </label>
           <input
             className="flex h-10 w-full rounded-md border border-[#dcdfe5] bg-[#f6f7f9] px-3 py-2 text-base ring-[#f6f7f9] file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a65e] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-            placeholder="e.g. Recreation and relaxation"
+            placeholder="e.g. Fresh linens"
             value=""
           />
+        </div>
+        <div className="space-y-2">
+          <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+            Icon (Optional)
+          </label>
+          <input
+            className="flex h-10 w-full rounded-md border border-[#dcdfe5] bg-[#f6f7f9] px-3 py-2 text-base ring-[#f6f7f9] file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a65e] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+            placeholder="e.g. 🛁"
+            value=""
+          />
+        </div>
+        <div className="flex items-center justify-between">
+          <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+            Enabled
+          </label>
+          <button
+            type="button"
+            role="switch"
+            aria-checked="true"
+            data-state="checked"
+            value="on"
+            className="peer inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors data-[state=checked]:bg-[#182543] data-[state=unchecked]:bg-[#dcdfe5] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            <span
+              data-state="checked"
+              className="pointer-events-none block h-5 w-5 rounded-full bg-[#f6f7f9] shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0"
+            ></span>
+          </button>
         </div>
       </div>
       <div className="flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2">
@@ -35,4 +63,4 @@ const DepartmentsModal = () => {
   );
 };
 
-export default DepartmentsModal;
+export default SingleDepartmentModal;
