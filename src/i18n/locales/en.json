@@ -124,7 +124,8 @@
     "notGenerated": "Not Generated",
     "generate": "Generate",
     "viewQR": "View QR",
-    "downloadCode": "Download QR Code"
+    "downloadCode": "Download QR Code",
+    "noResult": "No results found"
   },
   "integration": {
     "title": "Mews Integration Status",

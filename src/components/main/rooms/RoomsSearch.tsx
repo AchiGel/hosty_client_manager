@@ -3,14 +3,23 @@ import { ChevronDownIcon, SearchIcon } from "../../assets";
 import * as Select from "@radix-ui/react-select";
 import { ROOM_CATEGORIES } from "../../../constants/roomCategories";
 import CheckIcon from "../../assets/CheckIcon";
+import type { Dispatch, SetStateAction } from "react";
 
-const RoomsSearch = () => {
+const RoomsSearch = ({
+  searchValue,
+  setSearchValue,
+}: {
+  searchValue: string;
+  setSearchValue: Dispatch<SetStateAction<string>>;
+}) => {
   const { t } = useTranslation();
   return (
     <div className="flex flex-col sm:flex-row gap-3">
       <div className="relative flex-1">
         <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
         <input
+          value={searchValue}
+          onChange={(e) => setSearchValue(e.target.value)}
           type="text"
           placeholder={t("rooms.placeholder")}
           className="flex h-10 w-full rounded-md border border-[#dcdfe5] bg-[#f6f7f9] px-3 py-2 text-base ring-[#f6f7f9] file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a65e] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm pl-9"

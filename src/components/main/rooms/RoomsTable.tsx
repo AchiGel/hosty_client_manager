@@ -1,20 +1,15 @@
 import { useTranslation } from "react-i18next";
 import RoomsTableRow from "./RoomsTableRow";
-import { ROOMS, type Room } from "../../../constants/rooms";
-import { useState } from "react";
+import { type Room } from "../../../constants/rooms";
 
-const RoomsTable = () => {
+const RoomsTable = ({
+  initialRooms,
+  updateRoom,
+}: {
+  initialRooms: Room[];
+  updateRoom: (roomNumber: number, updatedRoom: Partial<Room>) => void;
+}) => {
   const { t } = useTranslation();
-  const [initialRooms, setInitialRooms] = useState<Room[]>(ROOMS);
-
-  // ოთახების განახლების ლოგიკა
-  const updateRoom = (roomNumber: number, updatedRoom: Partial<Room>) => {
-    setInitialRooms((prev) =>
-      prev.map((room) =>
-        room.roomNumber === roomNumber ? { ...room, ...updatedRoom } : room,
-      ),
-    );
-  };
 
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
@@ -37,15 +32,26 @@ const RoomsTable = () => {
             </tr>
           </thead>
           <tbody>
-            {initialRooms.map((room) => (
-              <RoomsTableRow
-                key={room.roomNumber}
-                roomNumber={room.roomNumber}
-                roomType={room.roomType}
-                qrStatus={room.qrStatus}
-                onUpdate={updateRoom}
-              />
-            ))}
+            {initialRooms.length < 1 ? (
+              <tr>
+                <td
+                  colSpan={4}
+                  className="px-6 py-12 text-center text-gray-400"
+                >
+                  {t("rooms.noResult")}
+                </td>
+              </tr>
+            ) : (
+              initialRooms.map((room) => (
+                <RoomsTableRow
+                  key={room.roomNumber}
+                  roomNumber={room.roomNumber}
+                  roomType={room.roomType}
+                  qrStatus={room.qrStatus}
+                  onUpdate={updateRoom}
+                />
+              ))
+            )}
           </tbody>
         </table>
       </div>

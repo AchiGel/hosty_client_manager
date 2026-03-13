@@ -124,7 +124,8 @@
     "notGenerated": "არ არის გენერირებული",
     "generate": "გენერირება",
     "viewQR": "QR ნახვა",
-    "downloadCode": "QR კოდის ჩამოტვირთვა"
+    "downloadCode": "QR კოდის ჩამოტვირთვა",
+    "noResult": "შედეგები ვერ მოიძებნა"
   },
   "integration": {
     "title": "Mews ინტეგრაციის სტატუსი",
