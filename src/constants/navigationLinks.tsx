@@ -161,7 +161,7 @@ export const NAVIGATION_LINKS = [
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="lucide lucide-door-open w-5.5 h-5.5 transition-colors text-[#c5a667]"
+        className="lucide lucide-door-open w-5.5 h-5.5 transition-colors group-hover:text-[#c5a667]"
       >
         <path d="M13 4h3a2 2 0 0 1 2 2v14"></path>
         <path d="M2 20h3"></path>
