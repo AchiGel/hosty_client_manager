@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import RoomsTableRow from "./RoomsTableRow";
 
 const RoomsTable = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
       <div className="overflow-x-auto">
@@ -8,16 +10,16 @@ const RoomsTable = () => {
           <thead>
             <tr className="border-b border-gray-100 bg-gray-50/50">
               <th className="px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                Room Number
+                {t("rooms.roomNumber")}
               </th>
               <th className="px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                Room Type
+                {t("rooms.roomType")}
               </th>
               <th className="px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                QR Status
+                {t("rooms.qrStatus")}
               </th>
               <th className="px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                Actions
+                {t("rooms.actions")}
               </th>
             </tr>
           </thead>

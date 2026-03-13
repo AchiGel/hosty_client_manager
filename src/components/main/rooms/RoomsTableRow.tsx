@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 import PanIcon from "../../assets/PanIcon";
 import QrIcon from "../../assets/QrIcon";
 import TrashIcon from "../../assets/TrashIcon";
 
 const RoomsTableRow = () => {
+  const { t } = useTranslation();
   return (
     <tr className="border-b border-gray-50 hover:bg-gray-50/50 transition-colors">
       <td className="px-6 py-4">
@@ -16,14 +18,14 @@ const RoomsTableRow = () => {
       <td className="px-6 py-4">
         <span className="inline-flex items-center gap-1.5 text-sm text-green-700 bg-green-50 px-2.5 py-1 rounded-md">
           <QrIcon />
-          Generated
+          {t("rooms.generated")}
         </span>
       </td>
       <td className="px-6 py-4">
         <div className="flex items-center gap-1">
           <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-[#f6f7f9] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a65e] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-[#dcdfe5] bg-[#f6f7f9] hover:bg-[#c9a65e] hover:text-[#0f1729] h-9 rounded-md px-3 gap-1 cursor-pointer">
             <QrIcon />
-            View QR
+            {t("rooms.viewQR")}
           </button>
           <button className="cursor-pointer text-gray-400 hover:text-gray-900 p-1.5 rounded hover:bg-gray-100">
             <PanIcon />

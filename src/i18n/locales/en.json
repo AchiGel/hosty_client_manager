@@ -107,6 +107,24 @@
     "custom": "Custom",
     "departmentPerformance": "Department Performance"
   },
+  "rooms": {
+    "title": "Rooms",
+    "subTitle": "Manage hotel rooms and QR codes",
+    "manageCategories": "Manage Categories",
+    "addRoom": "Add Room",
+    "totalRooms": "Total Rooms",
+    "withQRCode": "With QR Code",
+    "withoutQRCode": "Without QR Code",
+    "placeholder": "Search by room number or type...",
+    "roomNumber": "Room Number",
+    "roomType": "Room Type",
+    "qrStatus": "QR Status",
+    "actions": "Actions",
+    "generated": "Generated",
+    "notGenerated": "Not Generated",
+    "generate": "Generate",
+    "viewQR": "View QR"
+  },
   "integration": {
     "title": "Mews Integration Status",
     "subTitle": "Monitor Mews PMS connection, sync activity, and errors.",
@@ -161,6 +179,7 @@
     "error": "Error",
     "success": "Success",
     "cancel": "Cancel",
+    "create": "Create",
     "save": "Save",
     "delete": "Delete",
     "edit": "Edit",
