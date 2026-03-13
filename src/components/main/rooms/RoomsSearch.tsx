@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { ChevronDownIcon, SearchIcon } from "../../assets";
 import * as Select from "@radix-ui/react-select";
 import { ROOM_CATEGORIES } from "../../../constants/roomCategories";
+import CheckIcon from "../../assets/CheckIcon";
 
 const RoomsSearch = () => {
   const { t } = useTranslation();
@@ -33,7 +34,7 @@ const RoomsSearch = () => {
                 className="relative cursor-pointer rounded-sm px-3 py-2 pl-8 text-sm outline-none hover:bg-[#c9a65e] flex items-center"
               >
                 <Select.ItemIndicator className="absolute left-2 flex items-center">
-                  ✓
+                  <CheckIcon />
                 </Select.ItemIndicator>
 
                 <Select.ItemText>{t("common.all")}</Select.ItemText>
@@ -46,7 +47,7 @@ const RoomsSearch = () => {
                   className="relative cursor-pointer rounded-sm px-3 py-2 pl-8 text-sm outline-none hover:bg-[#c9a65e] flex items-center"
                 >
                   <Select.ItemIndicator className="absolute left-2 flex items-center">
-                    ✓
+                    <CheckIcon />
                   </Select.ItemIndicator>
 
                   <Select.ItemText>{rc.roomType}</Select.ItemText>

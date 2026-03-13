@@ -1,8 +1,21 @@
 import { useTranslation } from "react-i18next";
 import RoomsTableRow from "./RoomsTableRow";
+import { ROOMS, type Room } from "../../../constants/rooms";
+import { useState } from "react";
 
 const RoomsTable = () => {
   const { t } = useTranslation();
+  const [initialRooms, setInitialRooms] = useState<Room[]>(ROOMS);
+
+  // ოთახების განახლების ლოგიკა
+  const updateRoom = (roomNumber: number, updatedRoom: Partial<Room>) => {
+    setInitialRooms((prev) =>
+      prev.map((room) =>
+        room.roomNumber === roomNumber ? { ...room, ...updatedRoom } : room,
+      ),
+    );
+  };
+
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
       <div className="overflow-x-auto">
@@ -24,7 +37,15 @@ const RoomsTable = () => {
             </tr>
           </thead>
           <tbody>
-            <RoomsTableRow />
+            {initialRooms.map((room) => (
+              <RoomsTableRow
+                key={room.roomNumber}
+                roomNumber={room.roomNumber}
+                roomType={room.roomType}
+                qrStatus={room.qrStatus}
+                onUpdate={updateRoom}
+              />
+            ))}
           </tbody>
         </table>
       </div>
