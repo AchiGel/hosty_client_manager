@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { ChevronDownIcon, SearchIcon } from "../../assets";
+import { ROOM_CATEGORIES } from "../../../constants/roomCategories";
 
 const RoomsSearch = () => {
   const { t } = useTranslation();
@@ -26,6 +27,7 @@ const RoomsSearch = () => {
         <span>{t("common.all")}</span>
         <ChevronDownIcon />
       </button>
+      <select className="flex h-10 items-center justify-between rounded-md border border-[#dcdfe5] px-3 py-2 text-sm ring-[#f6f7f9] placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;&gt;span]:line-clamp-1 w-full sm:w-48 bg-white"></select>
     </div>
   );
 };
