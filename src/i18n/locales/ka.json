@@ -123,7 +123,8 @@
     "generated": "გენერირებული",
     "notGenerated": "არ არის გენერირებული",
     "generate": "გენერირება",
-    "viewQR": "QR ნახვა"
+    "viewQR": "QR ნახვა",
+    "downloadCode": "QR კოდის ჩამოტვირთვა"
   },
   "integration": {
     "title": "Mews ინტეგრაციის სტატუსი",
@@ -193,7 +194,8 @@
     "showing": "ნაჩვენებია",
     "of": "დან",
     "available": "ხელმისაწვდომია",
-    "unavailable": "მიუწვდომელია"
+    "unavailable": "მიუწვდომელია",
+    "code": "კოდი"
   },
   "auth": {
     "login": "ავტორიზაცია",

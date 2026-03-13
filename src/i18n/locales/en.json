@@ -123,7 +123,8 @@
     "generated": "Generated",
     "notGenerated": "Not Generated",
     "generate": "Generate",
-    "viewQR": "View QR"
+    "viewQR": "View QR",
+    "downloadCode": "Download QR Code"
   },
   "integration": {
     "title": "Mews Integration Status",
@@ -193,7 +194,8 @@
     "showing": "Showing",
     "of": "of",
     "available": "Available",
-    "unavailable": "Unavailable"
+    "unavailable": "Unavailable",
+    "code": "Code"
   },
   "auth": {
     "login": "Login",
